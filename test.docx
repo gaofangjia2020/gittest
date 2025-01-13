@@ -1,1 +1,29 @@
-测试
+# 进入项目目录
+cd D:\python\moni
+
+# 初始化Git仓库
+git init
+
+# 添加文件到暂存区
+git add .
+
+# 提交到本地仓库
+git commit -m "初始化提交"
+
+git config --global user.name "你的GitHub用户名"
+git config --global user.email "你的GitHub邮箱"
+
+# 添加远程仓库
+git remote add origin https://github.com/你的用户名/仓库名.git
+
+# 设置默认分支为main
+git branch -M main
+
+# 首次推送需要-u参数
+git push -u origin main
+
+# 生成SSH密钥
+ssh-keygen -t rsa -b 4096 -C "你的GitHub邮箱"
+
+# 查看公钥并添加到GitHub
+cat ~/.ssh/id_rsa.pub
