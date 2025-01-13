@@ -10,7 +10,7 @@ from io import BytesIO
 class QRCodeApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("二维码生成器 & 识别器 v0.1.1 作者：高芳嘉 2025-01-09")
+        self.root.title("二维码生成器 & 识别器 v0.2.1 作者：高芳嘉 2025-01-13")
         self.root.geometry("800x700")
         self.root.configure(bg='#f0f0f0')
         self.root.resizable(False, False)
@@ -268,4 +268,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = QRCodeApp(root)
     root.mainloop()
-#1
